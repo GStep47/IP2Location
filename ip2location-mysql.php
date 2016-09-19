@@ -5,7 +5,7 @@
 <h3>Overview</h3>
 <p>This is a simple .PHP file demonstrating how the databases at <a href="ip2location.com">IP2LOCATION.com</a> can be used to determine a website visitor's city and state.</p>
 <p>This demonstration file uses the <a href="https://www.ip2location.com/samples/db3-ip-country-region-city.txt">sample version</a> of <a href="https://www.ip2location.com/databases/db3-ip-country-region-city">DB3, "IP-Country-Region-City Database"</a> which returns a city-state pair. Full specifications for the ip-country-region-city database are <a href="https://www.ip2location.com/docs/db3-ip-country-region-city-specification.pdf">here</a>.</p>
-<p>I have added functionality that converts the state/province name to its two-digit code, and limits 
+<p>I have added functionality that converts the state/province name to its two-digit code.</p> 
 <h3>About the IP2Location.com database</h3>
 <p> This sample file runs against a MySQL database table based on this information.</p> 
 <p>The IP2Location database includes full state names ("Nebraska") while the DTN AgHost Weather API requires the two-letter abbreviation ("NE"). To convert this, my database contains a second table <b>ip2locst</b> which converts the full state name to the code via a sub-query.</p>
